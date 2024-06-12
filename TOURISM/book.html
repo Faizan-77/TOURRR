@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ox-travel | Booking</title>
+  <link rel="stylesheet" href="style_book.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <input type="checkbox" id="bars">
+  <nav class="nav-bar" id="navbar">
+    <div class="content">
+      <div class="site-logo">
+        <a href="#" class="logo-link">Ox-travel</a>
+      </div>
+
+      <ul class="navigation">
+        <li class="link"><a href="index.html#home">home</a></li>
+        <li class="link"><a href="index.html#about">about us</a></li>
+        <li class="link"><a href="index.html#next">next</a></li>
+        <li class="link"><a href="index.html#blog">blog</a></li>
+        <li class="link"><a href="index.html#gallery">gallery</a></li>
+        <li class="link"><a href="index.html#contact">contact</a></li>
+        <li class="link"><a href="booking.html">book now</a></li>
+      </ul>
+
+      <label for='bars' class="icon-bars"><i class="ri-bar-chart-2-fill"></i></label>
+    </div>
+  </nav>
+
+  <header class="home" id="home">
+    <div class="content">
+      <h1>Book Your <strong>Next</strong> Adventure</h1>
+      <h4>Reserve your spot for an unforgettable experience</h4>
+    </div>
+  </header>
+
+  <section class="booking" id="booking">
+    <div class="content">
+      <h2 class="booking-title">Booking Form</h2>
+      <form action="submit_booking.php" method="post" class="booking-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination:</label>
+          <select id="destination" name="destination" required>
+            <option value="rome">Rome</option>
+            <option value="london">London</option>
+            <option value="tokyo">Tokyo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Travel Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Special Requests:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-booking">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content">
+      <h4>ox-travel</h4>
+      <div class="social">
+        <span><a href="#"><i class="ri-facebook-fill"></i></a></span>
+        <span><a href="#"><i class="ri-instagram-fill"></i></a></span>
+        <span><a href="#"><i class="ri-twitter-fill"></i></a></span>
+        <span><a href="#"><i class="ri-linkedin-fill"></i></a></span>
+        <span><a href="#"><i class="ri-youtube-fill"></i></a></span>
+      </div>
+      <p><i class="ri-double-quotes-l"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis at ullam beatae temporibus officia quibusdam facilis dolorum non quo earum omnis soluta quas<i class="ri-double-quotes-r"></i></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nulla soluta.</p>
+      <ul class="navigation">
+        <li class="link"><a href="index.html#home">home</a></li>
+        <li class="link"><a href="index.html#about">about us</a></li>
+        <li class="link"><a href="index.html#next">next</a></li>
+        <li class="link"><a href="index.html#blog">blog</a></li>
+        <li class="link"><a href="index.html#gallery">gallery</a></li>
+        <li class="link"><a href="index.html#contact">contact</a></li>
+        <li class="link"><a href="booking.html">book now</a></li>
+      </ul>
+    </div>
+    <div class="rights">Copyrights &#169; <a href="http://" target="_blank" rel="noopener noreferrer">itcode</a>. all rights reserved</div>
+  </footer>
+</body>
+<script src="book.js"></script>
+
+</html>
